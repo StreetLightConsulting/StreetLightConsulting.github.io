@@ -85,59 +85,6 @@
     <div class="title">Memento Mori</div>
       <p>"The world and its desires pass away, but whoever does the will of God Lives." 1 John 2:17</p>
     </div>
-    <!-- Fundraising Progress Chart -->
-<div style="text-align: center; padding: 40px; background-color: #fff8f0;">
-  <h2 style="margin-bottom: 5px; font-weight: 600;">Neighbors Feeding Neighbors</h2>
-  <div style="font-size: 16px; color: #777; margin-bottom: 30px;">Fundraising Progress</div>
-  <div style="position: relative; width: 300px; margin: 0 auto;">
-    <canvas id="fundsChart"></canvas>
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-                font-size: 20px; font-weight: bold; color: #d35400;">
-      $8,000
-    </div>
-  </div>
-</div>
-
-<!-- Chart.js Library -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-<!-- Chart Initialization Script -->
-<script>
-  const raisedAmount = 8000;
-  const goalAmount = 100000;
-  const remaining = goalAmount - raisedAmount;
-
-  const ctx = document.getElementById('fundsChart').getContext('2d');
-
-  const data = {
-    labels: ['Raised', 'Remaining'],
-    datasets: [{
-      data: [raisedAmount, remaining],
-      backgroundColor: ['#f39c12', '#ecf0f1'],
-      hoverOffset: 10
-    }]
-  };
-
-  const config = {
-    type: 'doughnut',
-    data: data,
-    options: {
-      cutout: '70%',
-      animation: {
-        animateScale: true
-      },
-      plugins: {
-        legend: {
-          display: false
-        }
-      }
-    }
-  };
-
-  new Chart(ctx, config);
-</script>
-    
-    
   </div>
 </body>
 </html>
