@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Street Light Consulting</title>
+  
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -11,6 +17,7 @@
       background-color: #1e1e1e;
       color: #f5f5f5;
       line-height: 1.6;
+      padding-bottom: 80px; /* space for fixed button */
     }
 
     .container {
@@ -56,6 +63,23 @@
       border-radius: 8px;
     }
 
+    .follow-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #1f1f1f;
+      color: #ffcc80;
+      border: 2px solid #ffcc80;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .follow-btn:hover {
+      background-color: #ffcc80;
+      color: #1f1f1f;
+    }
+
     @media (max-width: 600px) {
       .title {
         font-size: 20px;
@@ -72,6 +96,7 @@
   </style>
 </head>
 <body>
+
   <div class="container">
     <div class="logo">
       <img src="C36A800D-B7A6-4E27-976E-EFE7FDA4B3FE.png" alt="Street Light Consulting Logo">
@@ -79,24 +104,31 @@
     
     <div class="title">Our Mission</div>
     <div class="quote">
-      <p>Helping Jesus-driven organizations: streamline operations, raise funds and scale impact.</p>
+      Helping Jesus-driven organizations: streamline operations, raise funds and scale impact.
     </div>
+
     <div class="bio">
-    <div class="title">Memento Mori</div>
-      <p class="quote">"The world and its desires pass away, but whoever does the will of God lives forever." <br> 1 John 2:17</p>
+      <div class="title">Memento Mori</div>
+      <p class="quote">"The world and its desires pass away, but whoever does the will of God lives forever." <br> — 1 John 2:17</p>
     </div>
+
     <div>
-    <div class="title">Current Projects and Goals</div>
-      <p class="quote">Neighbors Feeding Neighbors
-        <p>A food pantry in Savannah, Ga that serves 75 familes a day. Working with the team to teach them about accounting systems and tools and overhauling website design. Actively working on a goal of raising an initial $100,000.</p>
+      <div class="title">Current Projects and Goals</div>
+      <div class="quote">Neighbors Feeding Neighbors</div>
+      <p>A food pantry in Savannah, GA that serves 75 families a day. Working with the team to teach them about accounting systems and tools and overhauling website design. Actively working on a goal of raising an initial $100,000.</p>
     </div>
-    <div class="title">Our Next Mile</div>
-      <p class="quote">Sponorships + Capital Partners</p>
-        <p>Actively seeking sponsorships and capital partners to grow our firm's impact across multiple projects.</p>
-    </div>
-    <div class="title">Connect, Follow, and Chat Exclusively on TRUTH.</div>
-      <p class="quote"><a href="https://truthsocial.com/@streetlightconsulting">@StreetLightConsulting</a>
+
+    <div>
+      <div class="title">Our Next Mile</div>
+      <div class="quote">Sponsorships + Capital Partners</div>
+      <p>Actively seeking sponsorships and capital partners to grow our firm's impact across multiple projects.</p>
     </div>
   </div>
+
+  <!-- Fixed Follow Button -->
+  <a href="https://truthsocial.com/@streetlightconsulting" target="_blank" class="btn follow-btn">
+    <i class="fa-brands fa-comment-dots me-2"></i> Connect with us Exclusively on Truth Social
+  </a>
+
 </body>
 </html>
